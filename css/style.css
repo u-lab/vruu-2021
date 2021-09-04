@@ -104,11 +104,11 @@ header ul, footer ul {
     line-height: 1;
 }
 
-.header-nav {
+.header-nav, .footer-nav {
     margin-left: 20px;
 }
 
-.header-nav a {
+.header-nav, .footer-nav a {
     font-size: 1.8rem;
 }
 
