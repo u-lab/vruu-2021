@@ -80,10 +80,12 @@ header {
     position: fixed;
     width: 100%;
     background-color: rgba(239, 239, 239, 0.7);
+    z-index: 100;
 }
 
 header:hover {
     background-color: rgba(239, 239, 239, 1);
+    opacity: 1;
 }
 
 header .wrapper {
@@ -121,6 +123,10 @@ header ul, footer ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+section {
+    margin-bottom: 100px;
 }
 
 footer {
