@@ -36,9 +36,12 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    position: fixed;
     width: 100%;
     height: 80px;
+    background-color: #EFEFEF;
     align-items: center;
+    opacity: 0.8;
 }
 
 header ul, footer ul {
@@ -66,7 +69,7 @@ header nav {
 
 .mainvisual {
     margin-bottom: 80px;
-    height: calc(100vh - 80px);
+    height: 100vh;
 }
 
 .mainvisual img {
