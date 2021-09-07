@@ -82,6 +82,7 @@ header {
     width: 100%;
     background-color: rgba(239, 239, 239, 0.7);
     z-index: 100;
+    transition: 0.3s;
 }
 
 header:hover {
@@ -145,7 +146,7 @@ section {
 }
 
 footer {
-    background-color: #d4d4d4;
+    background-color: #efefef;
     text-align: center;
 }
 
