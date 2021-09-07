@@ -95,10 +95,9 @@ header .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-header ul, footer ul {
+header ul {
     display: flex;
 }
 
@@ -108,11 +107,11 @@ header ul, footer ul {
     line-height: 1;
 }
 
-.header-nav, .footer-nav {
-    margin-left: 20px;
+.header-nav, .footer-nav-item {
+    padding-left: 20px;
 }
 
-.header-nav, .footer-nav a {
+.header-nav, .footer-nav-item a {
     font-size: 1.8rem;
 }
 
@@ -148,11 +147,26 @@ section {
 footer {
     background-color: #efefef;
     text-align: center;
+    padding-bottom: 24px;
 }
 
 footer nav {
-    display: inline-block;
-    padding: 20px;
+    display: block;
+    padding: 32px 0;
+}
+
+.footer-nav {
+    text-align: left;
+}
+
+.footer-nav-item {
+    border-bottom: #2C2C2C 1px solid;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.footer-nav-item:first-child {
+    border-top: #2C2C2C 1px solid;
 }
 
 .ulab-logo {
@@ -162,5 +176,37 @@ footer nav {
 }
 
 .copyright {
-    padding: 10px 0;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 20px 0 12px;
+}
+
+@media all and (min-width: 480px) {
+    footer {
+        padding-top: 12px;
+    }
+
+    footer nav {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .footer-nav {
+        display: flex;
+    }
+
+    .footer-nav-item {
+        border-bottom: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .footer-nav-item:first-child {
+        border-top: none;
+    }
+
+    .copyright {
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
 }
