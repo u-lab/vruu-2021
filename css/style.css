@@ -148,26 +148,15 @@ section {
 footer {
     background-color: #efefef;
     text-align: center;
-    padding-bottom: 24px;
+    padding: 24px 0;
 }
 
 footer nav {
-    display: block;
-    padding: 32px 0;
+    display: none;
 }
 
 .footer-nav {
-    text-align: left;
-}
-
-.footer-nav-item {
-    border-bottom: #2C2C2C 1px solid;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
-.footer-nav-item:first-child {
-    border-top: #2C2C2C 1px solid;
+    display: flex;
 }
 
 .ulab-logo {
@@ -184,26 +173,12 @@ footer nav {
 
 @media all and (min-width: 480px) {
     footer {
-        padding-top: 12px;
+        padding: 12px 0;
     }
 
     footer nav {
         display: inline-block;
         padding: 20px;
-    }
-
-    .footer-nav {
-        display: flex;
-    }
-
-    .footer-nav-item {
-        border-bottom: none;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .footer-nav-item:first-child {
-        border-top: none;
     }
 
     .copyright {
