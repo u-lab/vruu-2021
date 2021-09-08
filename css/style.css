@@ -12,7 +12,7 @@ body {
     background-color: #FFFDF4;
     color: #2C2C2C;
     font-family: sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 img {
@@ -37,16 +37,17 @@ a {
 
 .sec-title {
     margin-bottom: 50px;
-    width: 200px;
-    font-size: 2rem;
+    width: 250px;
+    font-size: 3.2rem;
 }
 
 #enter .sec-title {
-    width: 300px;
+    width: 375px;
 }
 
 .sec-title {
     position: relative;
+    margin-bottom: 50px;
     padding: 1rem 3rem;
     border-bottom: 3px solid #0BBDF2;
     border-left: 3px solid #0BBDF2;
@@ -171,14 +172,14 @@ footer nav {
 
 .ulab-logo {
     margin: 0 auto;
-    width: 120px;
+    width: 150px;
     height: auto;
 }
 
 .copyright {
     display: inline-block;
     font-size: 1.2rem;
-    padding: 20px 0 12px;
+    padding: 20px 0 16px;
 }
 
 @media all and (min-width: 480px) {
