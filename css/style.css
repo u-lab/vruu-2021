@@ -171,6 +171,27 @@ footer nav {
     padding: 20px 0 16px;
 }
 
+.credit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.position-name {
+    padding: 25px 45px 10px 0;
+    width: 20%;
+    border-bottom: #C4C4C4 2px solid;
+    text-align: right;
+}
+
+.name {
+    padding: 25px 0 10px 0;
+    width: 80%;
+    border-bottom: #C4C4C4 2px solid;
+}
+
+.name .pr-40{
+    padding-right: 40px;
+}
 @media all and (min-width: 480px) {
     footer {
         padding: 12px 0;
