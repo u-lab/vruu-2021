@@ -242,6 +242,7 @@ footer nav {
 }
 
 .sns-item{
+    position: relative;
     display: flex;
     justify-content: center;
     width: 260px;
@@ -254,6 +255,30 @@ footer nav {
     border-color: #1D4293;
     border-radius: 15px;
     align-items: center;
+}
+
+.sns-item-twitter{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #0BBDF2;
+}
+
+.sns-item-facebook{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #0BBDF2;
+}
+
+.sns-item-instagram{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #0BBDF2;
 }
 @media all and (min-width: 480px) {
     footer {
