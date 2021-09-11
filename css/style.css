@@ -41,7 +41,7 @@ a {
     font-size: 3.2rem;
 }
 
-#enter .sec-title {
+#enter .sec-title,  #event .sec-title{
     width: 375px;
 }
 
@@ -219,6 +219,37 @@ footer nav {
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
+}
+
+#event .container{
+    display: flex;
+}
+
+.event-left, .event-right{
+    width: 50%;
+}
+
+.event-left{
+    border-right: #C4C4C4 1px solid;
+}
+.event-item{
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+.event-item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 60px;
+    height: 12px;
+    background-color: rgba(255, 179, 109, 0.6);
+}
+.event-item-title{
+    font-size: 2.4rem;
 }
 @media all and (min-width: 480px) {
     footer {
