@@ -174,6 +174,7 @@ footer nav {
 .credit {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .position-name {
@@ -193,9 +194,15 @@ footer nav {
     padding-right: 40px;
 }
 
+.name .name-item{
+    display: inline-block;
+    min-width: 15.5rem;
+}
+
 .link-list{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 
 .link-item{
@@ -231,6 +238,7 @@ footer nav {
 .sns-list{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 
 .sns-item{
