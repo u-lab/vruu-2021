@@ -36,22 +36,18 @@ a {
 }
 
 .sec-title {
-    margin-bottom: 50px;
-    width: 250px;
-    font-size: 3.2rem;
-}
-
-#enter .sec-title,  #event .sec-title{
-    width: 375px;
-}
-
-.sec-title {
     position: relative;
     margin-bottom: 50px;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
+    width: 230px;
     border-bottom: 3px solid #0BBDF2;
     border-left: 3px solid #0BBDF2;
     border-radius: 0 0 0 20px;
+    font-size: 2rem;
+}
+
+#enter .sec-title,  #event .sec-title{
+    width: 300px;
 }
 
 .sec-title:before {
@@ -86,11 +82,6 @@ header {
     transition: 0.3s;
 }
 
-header:hover {
-    background-color: rgba(239, 239, 239, 1);
-    opacity: 1;
-}
-
 header .wrapper {
     height: 80px;
     display: flex;
@@ -109,11 +100,31 @@ header ul {
 }
 
 .header-nav, .footer-nav-item {
-    padding-left: 20px;
+    padding: 20px 10px;
 }
 
-.header-nav, .footer-nav-item a {
-    font-size: 1.8rem;
+.header-nav a, .footer-nav-item a {
+    display: inline-block;
+    position: relative;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+}
+
+.header-nav a::after, .footer-nav-item a::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #2c2c2c;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.header-nav a:hover::after, .footer-nav-item a:hover::after {
+    transform: scale(1, 1);
 }
 
 .mainvisual {
@@ -244,26 +255,19 @@ footer nav {
 }
 
 .event-left{
+    padding-left: 50px;
     border-right: #C4C4C4 1px solid;
 }
 .event-item{
-    position: relative;
     margin-bottom: 40px;
-    font-size: 3rem;
+    font-size: 2rem;
     vertical-align: middle;
 }
 
-.event-item::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 8px;
-    width: 60px;
-    height: 12px;
-    background-color: rgba(255, 179, 109, 0.6);
-}
 .event-item-title{
-    font-size: 2.4rem;
+    font-size: 1.6rem;
+    background:linear-gradient(transparent 60%, #FFB36D 75%);
+    font-weight: bold;
 }
 
 .sns-list{
@@ -322,7 +326,7 @@ footer nav {
     }
 
     .copyright {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin-top: 0;
     }
 }
