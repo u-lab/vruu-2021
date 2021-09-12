@@ -141,15 +141,21 @@ header ul {
 
 .concept {
     position: absolute;
-    bottom: 20%;
-    left: 10%;
-    padding: 20px;
+    bottom: 10%;
+    left: 5%;
+    padding: 20px 40px;
     background-color: rgba(239, 239, 239, 0.7);
 }
 
 .concept .title {
+    padding-bottom: 20px;
     font-weight: bold;
     font-size: 5rem;
+}
+
+.concept .txt {
+    font-size: 2rem;
+    line-height: 2;
 }
 
 section {
