@@ -1,6 +1,6 @@
 $(function(){
 
-    $('header a').click(function(){
+    $('header nav a, footer nav a').click(function(){
         var headerHeight = 80;
         var speed = 1000;
         var href = $(this).attr('href');
