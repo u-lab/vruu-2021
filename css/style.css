@@ -234,6 +234,10 @@ footer nav {
     align-items: center;
 }
 
+.link-item:hover{
+    transform: scale(1.05);
+}
+
 .link-item-udai{
     font-size: 2rem;
     font-weight: bold;
@@ -301,12 +305,21 @@ footer nav {
     align-items: center;
 }
 
+.sns-item:hover{
+    background-color: #1D4293;
+    color: #FFFFFF;
+}
+
 .sns-item-twitter{
     position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
     color: #0BBDF2;
+}
+
+.sns-item:hover .sns-item-twitter, .sns-item:hover .sns-item-facebook, .sns-item:hover .sns-item-instagram{
+    color: #FFFFFF;
 }
 
 .sns-item-facebook{
@@ -430,6 +443,7 @@ footer nav {
     .link-item{
         display: flex;
         justify-content: center;
+        max-width: 30%;
         width: 260px;
         height: 195px;
         background-color: rgba(255, 255, 255, 0.7);
@@ -449,6 +463,7 @@ footer nav {
         position: relative;
         display: flex;
         justify-content: center;
+        max-width: 30%;
         width: 260px;
         height: 38px;
         background-color: #FFFFFF;
