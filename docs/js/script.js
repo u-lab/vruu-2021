@@ -66,3 +66,9 @@ $(function () {
         onChangeMenu();
     });
 });
+
+// Newsリストの処理
+$(function () {
+    var newsList = window.newsList;
+    console.log(newsList);
+});
