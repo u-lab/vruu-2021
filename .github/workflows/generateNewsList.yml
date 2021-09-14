@@ -31,4 +31,4 @@ jobs:
           author_email: h37kouya@gmail.com
           message: "Generate NewsList"
           add: "./docs/js/news.js"
-          push: "origin feature/news-list-batch --force"
+          push: "origin main --force"
