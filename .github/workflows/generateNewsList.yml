@@ -22,7 +22,7 @@ jobs:
         run: npm --prefix ./scripts/FetchNewsList ci
 
       - name: Update source code
-        run: npm --prefix ./scripts/FetchNewsList run generate | sed '1,3d' > ./docs/js/news.js
+        run: npm --prefix ./scripts/FetchNewsList run generate | sed '1,4d' > ./docs/js/news.js
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
