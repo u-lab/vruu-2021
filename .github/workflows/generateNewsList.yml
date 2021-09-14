@@ -2,8 +2,8 @@ name: GenerateNewsList
 
 on:
   schedule:
-    # 7:00 (JST) に処理を実行する。
-    - cron: "0 22 * * *"
+    # 7:00, 15:00, 21:00 (JST) に処理を実行する。
+    - cron: "0 6,12,22 * * *"
 
 jobs:
   run:
