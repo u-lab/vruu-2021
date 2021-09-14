@@ -3,6 +3,7 @@ name: GenerateNewsList
 on:
   pull_request:
     types: [opened]
+  push:
 
 jobs:
   run:
