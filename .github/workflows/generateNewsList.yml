@@ -1,9 +1,9 @@
 name: GenerateNewsList
 
 on:
-  pull_request:
-    types: [opened]
-  push:
+  schedule:
+    # 7:00 (JST) に処理を実行する。
+    - cron: "0 22 * * *"
 
 jobs:
   run:
