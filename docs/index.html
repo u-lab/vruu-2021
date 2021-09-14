@@ -26,6 +26,10 @@
     <!-- import css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <!--/Font Awesome Animation-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.css"
+        type="text/css" media="all" />
 </head>
 
 <body>
@@ -34,20 +38,60 @@
         <div class="wrapper">
             <h1 class="site-title"><a href="index.html">VRUU</a></h1>
 
-            <nav>
+            <nav class="header-nav-pc">
                 <ul>
-                    <li class="header-nav"><a href="#event">EVENT</a></li>
-                    <li class="header-nav"><a href="#enter">ENTER</a></li>
-                    <li class="header-nav"><a href="#news">NEWS</a></li>
-                    <li class="header-nav"><a href="#credit">CREDIT</a></li>
-                    <li class="header-nav"><a href="#link">LINK</a></li>
+                    <li class="header-nav-item"><a href="#event">EVENT</a></li>
+                    <li class="header-nav-item"><a href="#enter">ENTER</a></li>
+                    <li class="header-nav-item"><a href="#news">NEWS</a></li>
+                    <li class="header-nav-item"><a href="#credit">CREDIT</a></li>
+                    <li class="header-nav-item"><a href="#link">LINK</a></li>
                 </ul>
             </nav>
+
+            <div class="header-menu-sp">
+                <button type="button" class="header-menu-btn" aria-label="メニューを開く">
+                    <i class="fas fa-bars faa-pulse animated-hover"></i>
+                </button>
+            </div>
         </div>
     </header>
 
-    <main>
+    <nav class="sp-nav js-sp-nav-is-hidden">
+        <ul>
+            <li class="sp-nav-item">
+                <a href="#event">
+                    <span class="sp-nav-item-title">EVENT</span>
+                    <span class="sp-nav-item-subtitle">イベント基本情報</span>
+                </a>
+            </li>
+            <li class="sp-nav-item">
+                <a href="#enter">
+                    <span class="sp-nav-item-title">ENTER</span>
+                    <span class="sp-nav-item-subtitle">VRUUへの入り方</span>
+                </a>
+            </li>
+            <li class="sp-nav-item">
+                <a href="#news">
+                    <span class="sp-nav-item-title">NEWS</span>
+                    <span class="sp-nav-item-subtitle">ニュース</span>
+                </a>
+            </li>
+            <li class="sp-nav-item">
+                <a href="#credit">
+                    <span class="sp-nav-item-title">CREDIT</span>
+                    <span class="sp-nav-item-subtitle">クレジット</span>
+                </a>
+            </li>
+            <li class="sp-nav-item">
+                <a href="#link">
+                    <span class="sp-nav-item-title">LINK</span>
+                    <span class="sp-nav-item-subtitle">リンク</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
+    <main>
         <div class="mainvisual">
             <img src="img/mainvisual.png">
             <div class="concept">
@@ -216,6 +260,7 @@
 
     <!-- import js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/news.js"></script>
     <script src="js/script.js"></script>
 </body>
 
