@@ -92,7 +92,7 @@ $(function () {
 
         $('.news-list .news-title.' + newsNo ).append(newsTitle);
         $('.news-list .news-date.' + newsNo ).append(newsDate);
-        $('.news-list img.' + newsNo ).attr( 'src' , 'img/' + newsImage );
+        $('.news-list img.' + newsNo ).attr( 'src' , newsImage );
     }
 
 });
