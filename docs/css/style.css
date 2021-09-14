@@ -125,8 +125,11 @@ header ul {
     letter-spacing: 0.2rem;
 }
 
-.header-nav-item a::after, .footer-nav-item a::after {
+.header-nav-item a::after,
+.footer-nav-item a::after,
+.sp-nav-item a::after {
     position: absolute;
+    z-index: 5;
     bottom: -2px;
     left: 0;
     content: '';
@@ -138,8 +141,57 @@ header ul {
     transition: transform .3s;
 }
 
-.header-nav-item a:hover::after, .footer-nav-item a:hover::after {
+.header-nav-item a:hover::after,
+.footer-nav-item a:hover::after,
+.sp-nav-item a:hover::after {
     transform: scale(1, 1);
+}
+
+.sp-nav {
+    position: fixed;
+    background-color: rgba(239, 239, 239, 1);
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sp-nav ul {
+    position: absolute;
+    top: 20%;
+}
+
+.sp-nav-item {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 16px;
+}
+
+.sp-nav-item a {
+    display: inline-block;
+    position: relative;
+}
+
+.sp-nav-item-title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.sp-nav-item-subtitle {
+    display: block;
+    padding-left: 36px;
+}
+
+.js-sp-nav-is-open {
+    display: block;
+}
+
+.js-sp-nav-is-hidden {
+    display: none;
 }
 
 .mainvisual {
@@ -285,6 +337,7 @@ footer nav {
 .event-left{
     border-right:none;
 }
+
 .event-item{
     margin-bottom: 40px;
     font-size: 2rem;
@@ -522,4 +575,11 @@ footer nav {
         display: block;
     }
 
+    .sp-nav {
+        display: none;
+    }
+
+    .js-sp-nav-is-open {
+        display: none;
+    }
 }
