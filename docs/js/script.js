@@ -16,6 +16,7 @@ $(function () {
     // ヘッダーメニューボタン
     var headerMenuBtn = $("button.header-menu-btn");
     var headerMenuBtnIcon = $("button.header-menu-btn i");
+    // Spメニュー
     var spNav = $(".sp-nav");
     var spNavLink = $(".sp-nav a");
 
