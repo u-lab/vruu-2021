@@ -11,5 +11,5 @@
 
 ```shell
 # スプレッドシートの更新
-$ npm --prefix ./scripsts/FetchNewsList run generate
+$ npm --prefix ./scripts/FetchNewsList run generate | sed '1,4d' > docs/js/news.js
 ```
