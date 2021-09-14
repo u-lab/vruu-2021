@@ -236,6 +236,7 @@ footer nav {
 
 .link-item:hover{
     transform: scale(1.05);
+    transition: 0.1s;
 }
 
 .link-item-udai{
@@ -308,6 +309,7 @@ footer nav {
 .sns-item:hover{
     background-color: #1D4293;
     color: #FFFFFF;
+    transition: 0.1s;
 }
 
 .sns-item-twitter{
@@ -320,6 +322,7 @@ footer nav {
 
 .sns-item:hover .sns-item-twitter, .sns-item:hover .sns-item-facebook, .sns-item:hover .sns-item-instagram{
     color: #FFFFFF;
+    transition: 0.1s;
 }
 
 .sns-item-facebook{
@@ -410,7 +413,7 @@ footer nav {
         display: flex;
         flex-direction: row;
     }
-    
+
     .event-left, .event-right{
         width: 50%;
     }
@@ -481,7 +484,7 @@ footer nav {
         justify-content: space-between;
         margin-bottom: 30px;
     }
-    
+
     #enter .factor{
         position: relative;
         padding-top: 20px;
