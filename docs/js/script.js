@@ -80,15 +80,20 @@ $(function () {
 
         $('.news-list').append('<li class="' + newsNo + '"></li>');
 
-        $('.news-list li.' + newsNo ).append('<img class="' + newsNo + '">');
-        $('.news-list li.' + newsNo ).append('<p class="news-date ' + newsNo + '"></p>');
-        $('.news-list li.' + newsNo ).append('<p class="news-title ' + newsNo + '"></p>');
+        $('.news-list li.' + newsNo ).append('<a class="news-link news-link-' +  newsNo + '"></a>');
+
+        $('.news-list news-link-' + newsNo ).append('<img class="' + newsNo + '">');
+        $('.news-list news-link-' + newsNo ).append('<p class="news-date ' + newsNo + '"></p>');
+        $('.news-list news-link-' + newsNo ).append('<p class="news-title ' + newsNo + '"></p>');
 
         var newsItem = newsList[i]
 
         var newsTitle = newsItem.title
         var newsDate = newsItem.createdAt
         var newsImage = newsItem.imageLink
+        var newsLink = newsItem.link
+
+        $('news-list .news-link-' + newsNo ).attr( 'href' , newsLink );
 
         $('.news-list .news-title.' + newsNo ).append(newsTitle);
         $('.news-list .news-date.' + newsNo ).append(newsDate);
