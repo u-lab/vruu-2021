@@ -7,3 +7,9 @@
 - [UUVR 2020 サイト](https://2020.vr-uu.com/)
 - [UUVR 2020 Repository](https://github.com/u-lab/uuvr.github.io)
 
+## スプレッドシートの更新
+
+```shell
+# スプレッドシートの更新
+$ npm --prefix ./scripsts/FetchNewsList run generate
+```
