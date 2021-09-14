@@ -71,4 +71,28 @@ $(function () {
 $(function () {
     var newsList = window.newsList;
     console.log(newsList);
+
+    var newsNum = newsList.length;
+
+    for( var i = 0; i < newsNum; i++ ){
+
+        var newsNo = 'news-' + (i + 1);
+
+        $('.news-list').append('<li class="' + newsNo + '"></li>');
+
+        $('.news-list li.' + newsNo ).append('<img class="' + newsNo + '">');
+        $('.news-list li.' + newsNo ).append('<p class="news-date ' + newsNo + '"></p>');
+        $('.news-list li.' + newsNo ).append('<p class="news-title ' + newsNo + '"></p>');
+
+        var newsItem = newsList[i]
+
+        var newsTitle = newsItem.title
+        var newsDate = newsItem.createdAt
+        var newsImage = newsItem.imageLink
+
+        $('.news-list .news-title.' + newsNo ).append(newsTitle);
+        $('.news-list .news-date.' + newsNo ).append(newsDate);
+        $('.news-list img.' + newsNo ).attr( 'src' , 'img/' + newsImage );
+    }
+
 });
