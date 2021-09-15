@@ -639,10 +639,7 @@ footer nav {
     }
 
     .concept {
-        bottom: 10%;
-        left: 5%;
         padding: 20px 40px;
-        width: auto;
     }
 
     .concept .txt {
@@ -666,5 +663,14 @@ footer nav {
     .news-list li:nth-of-type(3n + 1),
     .news-list li:nth-of-type(3n + 2) {
         margin-right: 5%;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .concept {
+        bottom: 10%;
+        left: 5%;
+        padding: 20px 40px;
+        width: auto;
     }
 }
