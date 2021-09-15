@@ -1,0 +1,35 @@
+name: GenerateNewsList
+
+on:
+  schedule:
+    # 7:00, 15:00, 21:00 (JST) に処理を実行する。
+    - cron: "0 6,12,22 * * *"
+  workflow_dispatch:
+
+jobs:
+  run:
+    name: NewsListの生成
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+
+      - name: Install dependencies
+        run: npm --prefix ./scripts/FetchNewsList ci
+
+      - name: Update source code
+        run: npm --prefix ./scripts/FetchNewsList run generate | sed '1,4d' > ./docs/js/news.js
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: H37kouya
+          author_email: h37kouya@gmail.com
+          message: "Generate NewsList"
+          add: "./docs/js/news.js"
+          push: "origin main --force"

@@ -74,3 +74,5 @@ __pycache__
 # Container
 db/
 db-test/
+
+node_modules/
