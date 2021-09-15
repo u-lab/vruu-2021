@@ -208,9 +208,10 @@ header ul {
 
 .concept {
     position: absolute;
-    bottom: 10%;
-    left: 5%;
-    padding: 20px 40px;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 20px 32px;
     background-color: rgba(239, 239, 239, 0.7);
 }
 
@@ -221,7 +222,7 @@ header ul {
 }
 
 .concept .txt {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 2;
 }
 
@@ -635,6 +636,18 @@ footer nav {
 
     .js-sp-nav-is-open {
         display: none;
+    }
+
+    .concept {
+        bottom: 10%;
+        left: 5%;
+        padding: 20px 40px;
+        width: auto;
+    }
+
+    .concept .txt {
+        font-size: 2rem;
+        line-height: 2;
     }
 
     #enter .factor{
