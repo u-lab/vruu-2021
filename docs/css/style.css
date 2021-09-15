@@ -468,7 +468,7 @@ footer nav {
 }
 
 .news-list li {
-    width: 30%;
+    width: 100%;
     margin-bottom: 50px;
 }
 
@@ -499,11 +499,6 @@ footer nav {
     padding-left: 5px;
     font-weight: bold;
     font-size: 1.8rem;
-}
-
-.news-list li:nth-of-type(3n + 1),
-.news-list li:nth-of-type(3n + 2) {
-    margin-right: 5%;
 }
 
 
@@ -615,6 +610,14 @@ footer nav {
         padding-top: 10px;
         font-size: 1.4rem;
     }
+
+    .news-list li {
+        width: 47.5%;
+    }
+
+    .news-list li:nth-of-type(2n + 1){
+        margin-right: 5%;
+    }
 }
 
 @media all and (min-width: 768px) {
@@ -641,5 +644,14 @@ footer nav {
     #enter .factor:nth-of-type(1),
     #enter .factor:nth-of-type(2){
         margin-bottom: 0;
+    }
+
+    .news-list li {
+        width: 30%;
+    }
+
+    .news-list li:nth-of-type(3n + 1),
+    .news-list li:nth-of-type(3n + 2) {
+        margin-right: 5%;
     }
 }
