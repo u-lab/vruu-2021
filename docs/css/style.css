@@ -350,6 +350,50 @@ footer nav {
     font-weight: bold;
 }
 
+.event-right-list{
+    margin-bottom: 40px;
+    vertical-align: middle;
+}
+
+.event-right-list dt{
+    font-size: 1.6rem;
+    font-weight: bold;
+    float: left;
+    margin-left: 20px;
+    background:linear-gradient(transparent 60%, #FFB36D 75%);
+}
+
+.event-right-list dd{
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+.event-right-list span{
+    font-size: 1.4rem;
+}
+
+.event-btn{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 8px;
+    width: 300px;
+    background-color: #FFB36D;
+    border-radius: 10px;
+    border-bottom: #EB984B 6px solid;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.event-btn:active{
+    position: relative;
+    top: 6px;
+    border-bottom: none;
+
+}
+
 .sns-list{
     display: flex;
     justify-content: space-around;
