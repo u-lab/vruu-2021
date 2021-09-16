@@ -70,19 +70,21 @@ $(function () {
 // Newsリストの処理
 $(function () {
     var newsList = window.newsList;
-    console.log(newsList);
+
+    // newsの逆順
+    newsList.reverse()
 
     var newsNum = newsList.length;
 
-    for( var i = 0; i < newsNum; i++ ){
+    for (var i = 0; i < newsNum; i++) {
 
         var newsNo = 'news-' + (i + 1);
 
         $('.news-list').append('<li class="' + newsNo + '"></li>');
 
-        $('.news-list li.' + newsNo ).append('<a class="news-link link-' +  newsNo + '" href="#"></a>');
+        $('.news-list li.' + newsNo).append('<a class="news-link link-' + newsNo + '" href="#"></a>');
 
-        const newsListLink = $('.news-list .link-' + newsNo )
+        const newsListLink = $('.news-list .link-' + newsNo)
 
         newsListLink.append('<img class="' + newsNo + '">');
         newsListLink.append('<p class="news-date ' + newsNo + '"></p>');
@@ -91,18 +93,29 @@ $(function () {
         var newsItem = newsList[i]
 
         var newsTitle = newsItem.title;
-        var newsDate = newsItem.createdAt;
+        var newsDate = formatNewsDate(newsItem.createdAt);
         var newsImage = newsItem.imageLink;
         if (!newsImage) {
-            newsImage =  'img/top_picture.png';
+            newsImage = 'img/top_picture.png';
         }
         var newsLink = newsItem.link;
 
-        newsListLink.attr( 'href' , newsLink );
+        newsListLink.attr('href', newsLink);
 
-        $('.news-list .news-title.' + newsNo ).append(newsTitle);
-        $('.news-list .news-date.' + newsNo ).append(newsDate);
-        $('.news-list img.' + newsNo ).attr( 'src' , newsImage );
+        $('.news-list .news-title.' + newsNo).append(newsTitle);
+        $('.news-list .news-date.' + newsNo).append(newsDate);
+        $('.news-list img.' + newsNo).attr('src', newsImage);
     }
 
 });
+
+/**
+ * ニュースの日付を YYYY年MM月DD日 に変換する
+ *
+ * @param {String} date
+ * @returns
+ */
+function formatNewsDate(date) {
+    var split = date.split('-')
+    return split[0] + '年' + split[1] + '月' + split[2] + '日'
+}

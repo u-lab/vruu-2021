@@ -1,7 +1,7 @@
 {
   "name": "vruu-fetch-news-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "SpreadSheet に記載されているニュース一覧を取得して、js 用に出力する",
   "main": "main.js",
   "engines": {
     "node": ">=16.0.0"
