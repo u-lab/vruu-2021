@@ -70,6 +70,8 @@ $(function () {
 // Newsリストの処理
 $(function () {
     var newsList = window.newsList;
+
+    // newsの逆順
     newsList.reverse()
 
     var newsNum = newsList.length;
