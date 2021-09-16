@@ -46,8 +46,23 @@ a {
     font-size: 2rem;
 }
 
-#enter .sec-title,  #event .sec-title{
+#event .sec-title{
     width: 300px;
+}
+
+#enter .sec-title {
+    width: 360px;
+}
+
+.event-br {
+    display: block;
+    content: '';
+    margin-bottom: 8px;
+}
+
+#event .fs-16 {
+    padding: 0 2px;
+    font-size: 1.6rem;
 }
 
 .sec-title:before {
@@ -351,36 +366,53 @@ footer nav {
     border-right:none;
 }
 
-.event-item{
-    margin-bottom: 40px;
-    font-size: 2rem;
-    vertical-align: middle;
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .event-item-title{
-    font-size: 1.6rem;
-    background:linear-gradient(transparent 60%, #FFB36D 75%);
+    margin-bottom: 40px;
+    width: 25%;
     font-weight: bold;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.event-item-title span {
+    font-size: 1.6rem;
+    background: linear-gradient(transparent 60%, #FFB36D 75%);
+}
+
+.event-item-text{
+    margin-bottom: 40px;
+    width: 70%;
+    font-size: 2rem;
 }
 
 .event-right-list{
-    margin-bottom: 40px;
-    vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .event-right-list dt{
-    font-size: 1.6rem;
+    width: 25%;
+    font-size: 2rem;
     font-weight: bold;
-    float: left;
-    margin-left: 20px;
+    text-align: right;
+}
+
+.event-right-list dt span {
+    font-size: 1.6rem;
     background:linear-gradient(transparent 60%, #FFB36D 75%);
 }
 
 .event-right-list dd{
+    margin-bottom: 40px;
+    width: 70%;
     font-size: 2rem;
-    line-height: 1.5;
-    margin-left: 150px;
-    margin-bottom: 20px;
 }
 
 .event-right-list span{
@@ -398,6 +430,11 @@ footer nav {
     color: #fff;
     font-weight: bold;
     text-align: center;
+}
+
+.event-btn:hover {
+    background-color: #FFA858;
+    border-bottom: #CF7019 6px solid;
 }
 
 .event-btn:active{
@@ -574,20 +611,6 @@ footer nav {
         margin-top: 0;
     }
 
-    #event .container{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .event-left, .event-right{
-        width: 50%;
-    }
-
-    .event-left{
-        padding-left: 50px;
-        border-right: #C4C4C4 1px solid;
-    }
-
     .position-name {
         padding: 25px 45px 10px 0;
         width: 20%;
@@ -726,6 +749,49 @@ footer nav {
         margin-right: 5%;
     }
 }
+
+/* event font-size調整 ここから */
+
+@media screen and (min-width:805px ) {
+
+
+    #event .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .event-left, .event-right{
+        width: 50%;
+    }
+
+    .event-left{
+        border-right: #C4C4C4 1px solid;
+    }
+
+    .event-right-list {
+        padding-left: 30px;
+    }
+
+}
+
+@media all and (min-width:805px ) and (max-width: 870px) {
+
+    .event-right-list {
+        padding-left: 0;
+    }
+
+}
+
+@media all and (max-width:406px ) {
+
+    .event-item-title,
+    .event-right-list dt {
+        width: 28%;
+    }
+}
+
+/* event font-size調整 ここまで */
+
 
 @media all and (min-width: 1024px) {
     .concept {
