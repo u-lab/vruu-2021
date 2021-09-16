@@ -309,12 +309,19 @@ footer nav {
 
 .link-item:hover{
     transform: scale(1.05);
-    transition: 0.1s;
+    transition: 0.3s;
+}
+
+.link-item-udai:hover{
+    background-image: none;
+    background-color: #efefef;
 }
 
 .link-item-udai{
     font-size: 2rem;
     font-weight: bold;
+    background-image: url(../img/poster9.png);
+    background-size: cover;
 }
 
 .link-item-vruu2020{
