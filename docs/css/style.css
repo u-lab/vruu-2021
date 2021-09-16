@@ -99,6 +99,11 @@ header ul {
     line-height: 1;
 }
 
+.site-title img {
+    height: 60px;
+    vertical-align: bottom;
+}
+
 .header-nav-pc {
     display: none;
 }
