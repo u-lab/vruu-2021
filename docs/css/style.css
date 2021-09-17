@@ -384,7 +384,7 @@ footer nav {
     text-align: right;
 }
 
-.event-item-title span {
+.event-item-title .event-item-title-marker {
     font-size: 1.6rem;
     background: linear-gradient(transparent 60%, #FFB36D 75%);
 }
