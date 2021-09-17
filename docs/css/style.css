@@ -400,6 +400,10 @@ footer nav {
     font-size: 1.4rem;
 }
 
+.event-item-description-hidden-sp {
+    display: none;
+}
+
 .event-item-datetime::after {
     content: '\A';
     white-space: pre;
@@ -610,6 +614,10 @@ footer nav {
     .event-item-datetime::after {
         content: '';
         white-space: normal;
+        display: inline;
+    }
+
+    .event-item-description-hidden-sp {
         display: inline;
     }
 
