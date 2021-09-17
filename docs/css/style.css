@@ -282,23 +282,23 @@ footer nav {
     margin-bottom: 50px;
 }
 
-.position-name {
-    padding: 25px 45px 10px 0;
+.credit-position-name {
+    padding: 24px 20px 12px 0;
     width: 100%;
     border-bottom: none;
 }
 
-.name {
-    padding: 25px 0 10px 0;
+.credit-name {
+    padding: 12px 0 24px 0;
     width: 100%;
     border-bottom: #C4C4C4 2px solid;
 }
 
-.name .pr-40{
+.credit-name .pr-40{
     padding-right: 40px;
 }
 
-.name .name-item{
+.credit-name .name-item{
     display: inline-block;
     min-width: 15.5rem;
 }
@@ -611,14 +611,14 @@ footer nav {
         margin-top: 0;
     }
 
-    .position-name {
-        padding: 25px 45px 10px 0;
+    .credit-position-name {
+        padding: 25px 44px 10px 0;
         width: 20%;
         border-bottom: #C4C4C4 2px solid;
         text-align: right;
     }
 
-    .name {
+    .credit-name {
         padding: 25px 0 10px 0;
         width: 80%;
         border-bottom: #C4C4C4 2px solid;
