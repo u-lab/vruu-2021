@@ -678,6 +678,10 @@ footer nav {
         align-items: center;
     }
 
+    #enter .sec-title {
+        font-size: 2rem;
+    }
+
     #enter .container{
         display: flex;
         flex-wrap: wrap;
