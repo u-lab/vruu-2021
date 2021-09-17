@@ -236,7 +236,6 @@ header ul {
 }
 
 .concept .title {
-    padding-bottom: 8px;
     font-weight: bold;
     font-size: 4rem;
 }
@@ -722,7 +721,6 @@ footer nav {
     }
 
     .concept .title {
-        padding-bottom: 20px;
         font-size: 5rem;
     }
 
