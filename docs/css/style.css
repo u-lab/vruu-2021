@@ -28,9 +28,13 @@ a {
     text-decoration: none;
 }
 
+.section-container {
+    margin-bottom: 52px;
+}
+
 .wrapper {
     margin: 0 auto;
-    padding: 0 2%;
+    padding: 0 20px;
     width: 100%;
     max-width: 1200px;
 }
@@ -701,6 +705,14 @@ footer nav {
 }
 
 @media all and (min-width: 768px) {
+    .section-container {
+        margin-bottom: 100px;
+    }
+
+    .wrapper {
+        padding: 0 2%;
+    }
+
     .header-menu-sp {
         display: none;
     }
@@ -753,8 +765,6 @@ footer nav {
 /* event font-size調整 ここから */
 
 @media screen and (min-width:805px ) {
-
-
     #event .container{
         display: flex;
         flex-direction: row;
