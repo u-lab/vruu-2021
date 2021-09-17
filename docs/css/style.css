@@ -29,12 +29,12 @@ a {
 }
 
 .section-container {
-    margin-bottom: 52px;
+    margin-bottom: 52px !important;
 }
 
 .wrapper {
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
     width: 100%;
     max-width: 1200px;
 }
@@ -50,12 +50,13 @@ a {
     font-size: 2rem;
 }
 
-#event .sec-title{
-    width: 300px;
+#event .sec-title {
+    width: 100%;
 }
 
 #enter .sec-title {
-    width: 360px;
+    width: 100%;
+    font-size: 1.6rem;
 }
 
 .event-br {
@@ -64,9 +65,9 @@ a {
     margin-bottom: 8px;
 }
 
-#event .fs-16 {
+#event .fs-14 {
     padding: 0 2px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .sec-title:before {
@@ -119,6 +120,7 @@ header ul {
 }
 
 .site-title img {
+    width: 90vw;
     height: 60px;
     vertical-align: bottom;
 }
@@ -378,49 +380,31 @@ footer nav {
 
 .event-item-title{
     margin-bottom: 40px;
-    width: 25%;
+    width: 10rem;
     font-weight: bold;
-    font-size: 2rem;
     text-align: right;
 }
 
 .event-item-title .event-item-title-marker {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background: linear-gradient(transparent 60%, #FFB36D 75%);
 }
 
 .event-item-text{
     margin-bottom: 40px;
-    width: 70%;
-    font-size: 2rem;
-}
-
-.event-right-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.event-right-list dt{
-    width: 25%;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: right;
-}
-
-.event-right-list dt span {
+    width: calc(100% - 10rem - 1.5rem);
     font-size: 1.6rem;
-    background:linear-gradient(transparent 60%, #FFB36D 75%);
 }
 
-.event-right-list dd{
-    margin-bottom: 40px;
-    width: 70%;
-    font-size: 2rem;
-}
-
-.event-right-list span{
+.event-item-description {
     font-size: 1.4rem;
+}
+
+.event-item-datetime::after {
+    content: '\A';
+    white-space: pre;
+    display: block;
+    font-size: 0.5rem;
 }
 
 .event-btn{
@@ -615,6 +599,20 @@ footer nav {
         margin-top: 0;
     }
 
+    .event-item-title .event-item-title-marker {
+        font-size: 1.6rem;
+    }
+
+    .event-item-text{
+        font-size: 2rem;
+    }
+
+    .event-item-datetime::after {
+        content: '';
+        white-space: normal;
+        display: inline;
+    }
+
     .credit-position-name {
         padding: 25px 44px 10px 0;
         width: 20%;
@@ -705,6 +703,10 @@ footer nav {
 }
 
 @media all and (min-width: 768px) {
+    .site-title img {
+        width: auto;
+    }
+
     .section-container {
         margin-bottom: 100px;
     }
@@ -778,30 +780,10 @@ footer nav {
         border-right: #C4C4C4 1px solid;
     }
 
-    .event-right-list {
+    .event-right{
         padding-left: 30px;
     }
-
 }
-
-@media all and (min-width:805px ) and (max-width: 870px) {
-
-    .event-right-list {
-        padding-left: 0;
-    }
-
-}
-
-@media all and (max-width:406px ) {
-
-    .event-item-title,
-    .event-right-list dt {
-        width: 28%;
-    }
-}
-
-/* event font-size調整 ここまで */
-
 
 @media all and (min-width: 1024px) {
     .concept {
