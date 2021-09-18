@@ -13,6 +13,15 @@ $(function () {
         return false;
     })
 
+    $('.event-btn').click(function(){
+        $('.event-btn').text('誠意製作中です！');
+
+        setTimeout(function() {
+            $('.event-btn').text('イベントへGo!');
+        }, 3000);
+
+    })
+
     // ヘッダーメニューボタン
     var headerMenuBtn = $("button.header-menu-btn");
     var headerMenuBtnIcon = $("button.header-menu-btn i");
