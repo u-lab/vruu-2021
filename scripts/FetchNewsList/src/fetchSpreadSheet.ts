@@ -35,5 +35,5 @@ export const fetchSpreadSheet = async () => {
             imageLink: arr[2],
             email: arr[3],
             link: arr[4],
-        }))
+        })).filter(arr => arr.title !== "")
 }

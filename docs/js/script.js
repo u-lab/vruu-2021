@@ -87,6 +87,21 @@ $(function () {
 
     for (var i = 0; i < newsNum; i++) {
 
+        var newsItem = newsList[i]
+
+        var newsTitle = newsItem.title;
+        var newsDate = formatNewsDate(newsItem.createdAt);
+        var newsImage = newsItem.imageLink;
+        if (!newsImage) {
+            newsImage = 'img/top_picture.png';
+        }
+        var newsLink = newsItem.link;
+
+        // 行が空の時、エラーが出ないようにした
+        if (!newsTitle && !newsDate) {
+            continue
+        }
+
         var newsNo = 'news-' + (i + 1);
 
         $('.news-list').append('<li class="' + newsNo + '"></li>');
@@ -99,15 +114,7 @@ $(function () {
         newsListLink.append('<p class="news-date ' + newsNo + '"></p>');
         newsListLink.append('<p class="news-title ' + newsNo + '"></p>');
 
-        var newsItem = newsList[i]
 
-        var newsTitle = newsItem.title;
-        var newsDate = formatNewsDate(newsItem.createdAt);
-        var newsImage = newsItem.imageLink;
-        if (!newsImage) {
-            newsImage = 'img/top_picture.png';
-        }
-        var newsLink = newsItem.link;
 
         newsListLink.attr('href', newsLink);
 
