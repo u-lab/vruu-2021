@@ -14,7 +14,7 @@ $(function () {
     })
 
     $('.event-btn').click(function(){
-        $('.event-btn').text('誠意製作中です！');
+        $('.event-btn').text('誠意制作中です！');
 
         setTimeout(function() {
             $('.event-btn').text('イベントへGo!');
