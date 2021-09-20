@@ -474,6 +474,7 @@ footer nav {
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
+    font-weight: normal;
     color: #0BBDF2;
 }
 
@@ -487,6 +488,7 @@ footer nav {
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
+    font-weight: normal;
     color: #0BBDF2;
 }
 
@@ -495,6 +497,7 @@ footer nav {
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
+    font-weight: normal;
     color: #0BBDF2;
 }
 #enter .container{
