@@ -24,12 +24,16 @@ li {
 }
 
 a {
-    color: #091737;
+    color: #2C2C2C;
     text-decoration: none;
 }
 
 .section-container {
     margin-bottom: 52px !important;
+}
+
+.space {
+    letter-spacing: -0.1rem;
 }
 
 .wrapper {
@@ -474,8 +478,8 @@ footer nav {
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-    font-weight: normal;
     color: #0BBDF2;
+    font-weight: normal;
 }
 
 .sns-item:hover .sns-item-twitter, .sns-item:hover .sns-item-facebook, .sns-item:hover .sns-item-instagram{
@@ -488,8 +492,8 @@ footer nav {
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-    font-weight: normal;
     color: #0BBDF2;
+    font-weight: normal;
 }
 
 .sns-item-instagram{
@@ -497,8 +501,8 @@ footer nav {
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-    font-weight: normal;
     color: #0BBDF2;
+    font-weight: normal;
 }
 #enter .container{
     justify-content: space-between;
