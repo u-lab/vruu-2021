@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FFFDF4;
+  color: #2C2C2C;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2;
+}
+
+header{
+  text-align: center;
+  color: #0BBDF2;
+}
+
+h1{
+  padding-top: 50px;
+}
+
+img {
+  max-width: 100%;
+}
+
+div{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.describe-1{
+  padding: 20px 20px;
+}
+
+h2{
+  padding: 0.5rem 2rem;
+  border-bottom: 3px dashed #FFB36D;
+  display: inline-block;
+  }
+  
+.dicord-btn{
+  display: block;
+  margin: 20px auto;
+  padding: 8px;
+  width: 300px;
+  height: 45px;
+  background-color: #FFB36D;
+  border-radius: 10px;
+  border-bottom: #EB984B 6px solid;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.discord-link{
+  display: block;
+  margin: 50px auto;
+  padding: 8px;
+  width: 300px;
+  height: 45px;
+  background-color: #FFB36D;
+  border-radius: 10px;
+  border-bottom: #EB984B 6px solid;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.QR{
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer {
+  background-color: #efefef;
+  text-align: center;
+  padding: 24px 0;
+}
+
+footer nav {
+  display: none;
+}
+
+.footer-nav {
+  display: flex;
+}
