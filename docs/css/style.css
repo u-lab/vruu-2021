@@ -480,6 +480,7 @@ footer nav {
     display: flex;
     justify-content: center;
     margin: 0 auto 10px;
+    padding: 20px 0;
     width: 80%;
     height: 38px;
     background-color: #FFFFFF;
@@ -544,13 +545,43 @@ footer nav {
 }
 
 .sns-item-instagram{
+    display: block;
     position: absolute;
     top: 50%;
     left: 15px;
+    width: 18px;
+    height: 18px;
     transform: translateY(-50%);
-    color: #f1224d;
     font-weight: normal;
+    opacity: 1;
+    visibility: visible;
 }
+
+.sns-item-instagram-w {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sns-insta:hover .sns-item-instagram-w {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
+    font-weight: normal;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sns-insta:hover .sns-item-instagram {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
 #enter .container{
     justify-content: space-between;
     margin-bottom: 30px;
