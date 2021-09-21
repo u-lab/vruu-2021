@@ -106,7 +106,7 @@ $(function () {
 
         $('.news-list').append('<li class="' + newsNo + '"></li>');
 
-        $('.news-list li.' + newsNo).append('<a class="news-link link-' + newsNo + '" href="#"></a>');
+        $('.news-list li.' + newsNo).append('<a class="news-link link-' + newsNo + '"></a>');
 
         const newsListLink = $('.news-list .link-' + newsNo)
 
