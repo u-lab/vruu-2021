@@ -339,11 +339,6 @@ footer nav {
     transition: 0.3s;
 }
 
-.link-item-udai:hover{
-    background-image: none;
-    background-color: #efefef;
-}
-
 .link-item-udai{
     font-size: 2rem;
     font-weight: bold;
