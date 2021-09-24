@@ -6,5 +6,11 @@ window.newsList = [
     "title": "VRUU①「桑鶴君、お疲れさま！」",
     "imageLink": "https://drive.google.com/uc?export=view&id=16674ZpSbjv16rv0MJeMq9Hquanm5_eyw&usp=sharing",
     "link": "https://media.uu-circles.com/2021/09/vruu1/"
+  },
+  {
+    "createdAt": "2021-09-22",
+    "title": "ミヤラジ出演 (2021年9月18日)",
+    "imageLink": "https://drive.google.com/uc?export=view&id=1Lsk6HYYueuSVgjudW0s0xwh8p-oCRL9p&usp=sharing",
+    "link": "https://ulab-uu.com/2021/09/22/20210922-vruu-miyaraji/"
   }
 ]
