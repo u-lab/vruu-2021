@@ -13,14 +13,15 @@ $(function () {
         return false;
     })
 
-    $('.event-btn').click(function(){
-        $('.event-btn').text('誠意制作中です！');
+    //// Event-btn クリックファンクション
+    //$('.event-btn').click(function(){
+    //    $('.event-btn').text('誠意制作中です！');
 
-        setTimeout(function() {
-            $('.event-btn').text('イベントへGo!');
-        }, 3000);
+    //    setTimeout(function() {
+    //        $('.event-btn').text('イベントへGo!');
+    //    }, 3000);
 
-    })
+    //})
 
     // ヘッダーメニューボタン
     var headerMenuBtn = $("button.header-menu-btn");
