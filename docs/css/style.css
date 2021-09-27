@@ -442,6 +442,14 @@ footer nav {
     display: none;
 }
 
+.event-item-device-title {
+    margin-bottom: 0.5rem;
+}
+
+.event-item-device-explain {
+    font-size: 1.2rem;
+}
+
 .event-item-datetime::after {
     content: '\A';
     white-space: pre;
@@ -841,6 +849,10 @@ footer nav {
 
     .js-sp-nav-is-open {
         display: none;
+    }
+
+    .event-item-device-explain {
+        font-size: 1.4rem;
     }
 
     .concept {
