@@ -17,16 +17,10 @@ body {
   line-height: 1.5;
 }
 
-header{
-  text-align: center;
-  color: #0BBDF2;
-}
-
 h1{
+  color: #0BBDF2;
   padding-top: 50px;
   padding-bottom: 30px;
-  margin: 0 auto;
-  width: 295px;
   font-size: 21px;
 }
 
@@ -150,7 +144,6 @@ footer nav {
 
 @media all and (min-width: 768px) {
   h1{
-    width: 450px;
     line-height: 2;
     font-size: 24px;
   }
