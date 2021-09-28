@@ -54,6 +54,12 @@ h2{
   margin: 30px 0;
 }
 
+.describe-1,
+.describe-2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .dicord-btn{
   display: block;
   margin: 30px auto;
@@ -98,6 +104,8 @@ h2{
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
   width: 95%;
 }
 
@@ -153,9 +161,6 @@ footer nav {
 }
 
 @media all and (min-width:805px ) {
-  div{
-    width: 700px;
-  }
   h1{
     width: 550px;
   }
@@ -166,10 +171,6 @@ footer nav {
     line-height: 2;
   }
 
-  div{
-    width: 900px;
-    margin-bottom: 40px;
-  }
   .QR{
     margin-bottom: 0px;
   }
@@ -180,10 +181,6 @@ footer nav {
 }
 
 @media all and (min-width: 1440px) {
-  div{
-    width: 1000px;
-  }
-
   h1{
     width: 1000px;
   }
