@@ -111,6 +111,23 @@ footer nav {
   display: flex;
 }
 
+.ulab-logo {
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+}
+
+.ulab-logo img {
+  margin: 0;
+}
+
+.copyright {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 20px 0 16px;
+  font-weight: 400;
+}
+
 @media all and (min-width: 480px) {
 
 }
