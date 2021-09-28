@@ -40,7 +40,7 @@ img {
   margin: 0 auto;
   padding: 0 16px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 h2{
@@ -102,11 +102,15 @@ h2{
 
 .event{
   text-align: center;
-  margin-top: 50px;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 95%;
+}
+
+.talk-detail-liet {
+  padding-top: 30px;
+  padding-left: 24px;
 }
 
 footer {
@@ -145,9 +149,6 @@ footer nav {
 }
 
 @media all and (min-width: 768px) {
-  div{
-    width: 600px;
-  }
   h1{
     width: 450px;
     line-height: 2;
@@ -177,11 +178,5 @@ footer nav {
 
   h1{
     width: 900px;
-  }
-}
-
-@media all and (min-width: 1440px) {
-  h1{
-    width: 1000px;
   }
 }
