@@ -238,7 +238,7 @@ footer nav {
 
 .copyright {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding: 16px 0 16px;
   font-weight: 400;
 }
@@ -251,6 +251,10 @@ footer nav {
   footer nav {
     display: inline-block;
     padding: 20px;
+  }
+
+  .copyright {
+    font-size: 1.4rem;
   }
 }
 
