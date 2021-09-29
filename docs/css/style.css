@@ -489,6 +489,16 @@ footer nav {
 
 }
 
+.world-box {
+    display: flex;
+    justify-content: center;
+}
+
+.world-img {
+    display: flex;
+    flex-direction: column;
+}
+
 .sns-list{
     display: flex;
     justify-content: space-around;
@@ -875,6 +885,10 @@ footer nav {
     #enter .factor:nth-of-type(1),
     #enter .factor:nth-of-type(2){
         margin-bottom: 0;
+    }
+
+    .world-img {
+        flex-direction: row;
     }
 
     .news-list li {
