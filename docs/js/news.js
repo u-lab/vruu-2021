@@ -18,5 +18,11 @@ window.newsList = [
     "title": "VRの将来性",
     "imageLink": "https://drive.google.com/uc?export=view&id=16-hsWMIsX3VDfwdsFw74bB8er4CPXkHe&usp=sharing",
     "link": "https://note.com/vruu/n/nd3e4baf49bbc"
+  },
+  {
+    "createdAt": "2021-09-29",
+    "title": "VRUU②ポスターとHPが完成しました！",
+    "imageLink": "https://drive.google.com/uc?export=view&id=14vPMEuny_3JlW6skB-8sds7mDzgYy59f&usp=sharing",
+    "link": "https://media.uu-circles.com/2021/09/vruu2/"
   }
 ]
