@@ -278,7 +278,12 @@ footer nav {
 .ulab-logo {
     margin: 0 auto;
     width: 150px;
-    height: auto;
+    height: 40px;
+}
+
+.ulab-logo a {
+    display: block;
+    height: 40px;
 }
 
 .copyright {
