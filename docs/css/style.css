@@ -278,7 +278,12 @@ footer nav {
 .ulab-logo {
     margin: 0 auto;
     width: 150px;
-    height: auto;
+    height: 40px;
+}
+
+.ulab-logo a {
+    display: block;
+    height: 40px;
 }
 
 .copyright {
@@ -487,6 +492,16 @@ footer nav {
     top: 6px;
     border-bottom: none;
 
+}
+
+.world-box {
+    display: flex;
+    justify-content: center;
+}
+
+.world-img {
+    display: flex;
+    flex-direction: column;
 }
 
 .sns-list{
@@ -875,6 +890,10 @@ footer nav {
     #enter .factor:nth-of-type(1),
     #enter .factor:nth-of-type(2){
         margin-bottom: 0;
+    }
+
+    .world-img {
+        flex-direction: row;
     }
 
     .news-list li {

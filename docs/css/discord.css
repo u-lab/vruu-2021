@@ -66,6 +66,7 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
 }
 
 header ul {
@@ -222,11 +223,17 @@ footer nav {
 .ulab-logo {
   margin: 0 auto;
   width: 150px;
-  height: auto;
+  height: 40px;
+}
+
+.ulab-logo a {
+  display: block;
+  height: 40px;
 }
 
 .ulab-logo img {
   margin: 0;
+  max-width: 100%;
 }
 
 .copyright {
@@ -237,7 +244,18 @@ footer nav {
 }
 
 @media all and (min-width: 480px) {
+  footer {
+    padding: 12px 0;
+  }
 
+  footer nav {
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .copyright {
+    font-size: 1.4rem;
+  }
 }
 
 @media all and (min-width: 768px) {
