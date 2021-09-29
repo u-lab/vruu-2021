@@ -66,6 +66,7 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
 }
 
 header ul {
