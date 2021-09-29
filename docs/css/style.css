@@ -504,6 +504,10 @@ footer nav {
     flex-direction: column;
 }
 
+.world-img img {
+    vertical-align: bottom;
+}
+
 .sns-list{
     display: flex;
     justify-content: space-around;
