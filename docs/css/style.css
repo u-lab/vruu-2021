@@ -54,7 +54,8 @@ a {
     font-size: 2rem;
 }
 
-#event .sec-title {
+#event .sec-title,
+#event_scedule .sec-title {
     width: 100%;
     max-width: 360px;
 }
@@ -491,7 +492,26 @@ footer nav {
     position: relative;
     top: 6px;
     border-bottom: none;
+}
 
+.event_scedule-box {
+    display: flex;
+    justify-content: center;
+}
+
+.event_scedule-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.event_scedule-img img {
+    vertical-align: bottom;
+}
+
+
+.everyone-request-box {
+    display: flex;
+    justify-content: center;
 }
 
 .world-box {
@@ -894,6 +914,10 @@ footer nav {
     #enter .factor:nth-of-type(1),
     #enter .factor:nth-of-type(2){
         margin-bottom: 0;
+    }
+
+    .event_scedule-img {
+        flex-direction: row;
     }
 
     .world-img {
