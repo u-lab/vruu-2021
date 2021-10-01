@@ -508,6 +508,12 @@ footer nav {
     vertical-align: bottom;
 }
 
+.event_scedule-img img:first-of-type {
+    margin-bottom: 20px;
+    margin-right: 0;
+    vertical-align: bottom;
+}
+
 
 .everyone-request-box {
     display: flex;
@@ -916,10 +922,6 @@ footer nav {
         margin-bottom: 0;
     }
 
-    .event_scedule-img {
-        flex-direction: row;
-    }
-
     .world-img {
         flex-direction: row;
     }
@@ -936,6 +938,18 @@ footer nav {
     .news-list li:nth-of-type(3n + 2) {
         margin-right: 5%;
     }
+}
+
+@media screen and (min-width:840px ) {
+
+    .event_scedule-img {
+        flex-direction: row;
+    }
+
+    .event_scedule-img img:first-of-type {
+        margin-right: 10px;
+    }
+
 }
 
 /* event font-size調整 ここから */
