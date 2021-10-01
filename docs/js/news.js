@@ -24,5 +24,11 @@ window.newsList = [
     "title": "VRUU②ポスターとHPが完成しました！",
     "imageLink": "https://drive.google.com/uc?export=view&id=14vPMEuny_3JlW6skB-8sds7mDzgYy59f&usp=sharing",
     "link": "https://media.uu-circles.com/2021/09/vruu2/"
+  },
+  {
+    "createdAt": "2021-10-01",
+    "title": "VRUU③1分で分かる富山先輩の制作解説",
+    "imageLink": "https://drive.google.com/uc?export=view&id=1v86GB4bjFvU0D30dfsEPIl9Wdi4XjCFh&usp=sharing",
+    "link": "https://media.uu-circles.com/2021/10/vruu3/"
   }
 ]
