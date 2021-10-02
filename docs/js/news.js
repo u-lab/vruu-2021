@@ -36,5 +36,17 @@ window.newsList = [
     "title": "VRUU④青木代表のお話",
     "imageLink": "https://drive.google.com/uc?export=view&id=1rHFyv8Q8iBf0kR7tT95riQNX-_Pzx5zb&usp=sharing",
     "link": "https://media.uu-circles.com/2021/10/vruu4/"
+  },
+  {
+    "createdAt": "2021-10-02",
+    "title": "VRUU⑤ギミック専門家白井が教えるVRUUの楽しみ方",
+    "imageLink": "https://drive.google.com/uc?export=view&id=1t1_ifFeiu0JawoX3psjC1YP31iAdJLOx&usp=sharing",
+    "link": "https://media.uu-circles.com/2021/10/vruu5/"
+  },
+  {
+    "createdAt": "2021-10-02",
+    "title": "VRUU⑥イベント登壇サークル基礎情報",
+    "imageLink": "https://drive.google.com/uc?export=view&id=1utu_IZcdB7uHck18OCiv7x9fg6hq3gIU&usp=sharing",
+    "link": "https://media.uu-circles.com/2021/10/vruu6/"
   }
 ]
