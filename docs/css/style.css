@@ -248,6 +248,26 @@ header ul {
     background-color: rgba(239, 239, 239, 0.7);
 }
 
+.event-info {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 90vw;
+    background-color: rgba(239, 239, 239, 0.9);
+    border-radius: 10px;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.event-info-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.event-info > .event-btn {
+    margin: 10px auto;
+}
+
 .concept .title {
     font-weight: bold;
     font-size: 4rem;
@@ -983,5 +1003,28 @@ footer nav {
 @media all and (min-width: 1440px) {
     .concept {
         width: auto;
+    }
+}
+
+@media screen and (max-width:350px ) {
+
+    .concept {
+        padding: 20px;
+    }
+
+    .concept .title {
+        font-size: 3.4rem;
+    }
+
+    .concept .txt {
+        font-size: 1.4rem;
+    }
+
+    .event-info {
+        top: 80px;
+    }
+
+    .event-info > .event-btn {
+        width: 250px;
     }
 }
