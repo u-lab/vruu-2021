@@ -243,6 +243,12 @@ footer nav {
   font-weight: 400;
 }
 
+.everyone-request-box {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
 @media all and (min-width: 480px) {
   footer {
     padding: 12px 0;
