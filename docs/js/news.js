@@ -30,5 +30,11 @@ window.newsList = [
     "title": "VRUU③1分で分かる富山先輩の制作解説",
     "imageLink": "https://drive.google.com/uc?export=view&id=1v86GB4bjFvU0D30dfsEPIl9Wdi4XjCFh&usp=sharing",
     "link": "https://media.uu-circles.com/2021/10/vruu3/"
+  },
+  {
+    "createdAt": "2021-10-02",
+    "title": "VRUU④青木代表のお話",
+    "imageLink": "https://drive.google.com/uc?export=view&id=1rHFyv8Q8iBf0kR7tT95riQNX-_Pzx5zb&usp=sharing",
+    "link": "https://media.uu-circles.com/2021/10/vruu4/"
   }
 ]
